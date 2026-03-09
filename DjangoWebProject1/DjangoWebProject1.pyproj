@@ -3,6 +3,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>DjangoWebProject1</Name>
     <RootNamespace>DjangoWebProject1</RootNamespace>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -31,6 +32,9 @@
   <ItemGroup>
     <Compile Include="HelloDjangoApp\admin.py" />
     <Compile Include="HelloDjangoApp\apps.py" />
+    <Compile Include="HelloDjangoApp\management\commands\importCSV.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="HelloDjangoApp\migrations\__init__.py" />
     <Compile Include="HelloDjangoApp\models.py" />
     <Compile Include="HelloDjangoApp\tests.py" />
@@ -57,7 +61,9 @@
   <ItemGroup>
     <Folder Include="DjangoWebProject1\" />
     <Folder Include="HelloDjangoApp\" />
+    <Folder Include="HelloDjangoApp\management\commands\" />
     <Folder Include="HelloDjangoApp\migrations\" />
+    <Folder Include="HelloDjangoApp\management\" />
     <Folder Include="HelloDjangoApp\templates\" />
     <Folder Include="HelloDjangoApp\templates\HelloDjangoApp\" />
     <Folder Include="MyApp1\" />
