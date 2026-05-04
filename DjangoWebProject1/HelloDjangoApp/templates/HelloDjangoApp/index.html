@@ -3,7 +3,7 @@
 
 <body>
 
-<strong>Teacher</strong>
+    <strong>Teacher</strong>
 
     {% if content %}
     <table>
@@ -21,5 +21,7 @@
     {% else %}
     <strong>NO data!!</strong>
     {% endif %}
+    <p><a href="{% url 'report'%}">Input new Teachers</a></p>
+    <p><a href="{% url 'report'%}">PDF report</a></p>
 </body>
 </html>
