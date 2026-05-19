@@ -6,6 +6,7 @@ from django.urls import path
 from django.urls import path
 from django.urls import path, include
 
+
 urlpatterns = [
     # Uncomment the next line to enable the admin:
     path('admin/', admin.site.urls),

@@ -30,6 +30,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DjangoWebProject1\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="HelloDjangoApp\admin.py" />
     <Compile Include="HelloDjangoApp\apps.py" />
     <Compile Include="HelloDjangoApp\management\commands\importCSV.py">
@@ -54,7 +57,9 @@
     <Compile Include="MyApp1\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DjangoWebProject1\WebPage1.html" />
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\index.html" />
+    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\login.html" />
     <Content Include="MyApp1\templates\MyApp1\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
