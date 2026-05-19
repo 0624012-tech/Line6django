@@ -5,12 +5,6 @@ from datetime import datetime
 from .models import teacher
 from pypdf import PdfWriter, PdfReader
 from reportlab.pdfgen import canvas #Generating PDfs
-from reportlab.platypus import Paragraph,Image,Table #Generating PDfs
-from django.http import FileResponse #Downloading files
-from django.contrib.staticfiles.storage import staticfiles_storage #Working with static files
-from io import BytesIO #Using Byte streams
-
-
 
 # Create your views here.
 def index(request):
@@ -19,7 +13,7 @@ def index(request):
     return render(request,"HelloDjangoApp/index.html", {'content':teach})
 
 def report (request):
-    pdf_file = static_storage.path.path("EON15P-1_1_.pdf")
+
 
     try: 
         merger = PdfWriter()
